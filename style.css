@@ -1,0 +1,221 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .main {
+    width: 100%;
+    border: 2px solid #000;
+  }
+
+  .main-gis {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .map {
+    flex: 3;
+  }
+
+  td {
+    font-size: 0.9rem;
+  }
+
+  form > input {
+    margin-top: 10px;
+  }
+
+  .main__gis--left {
+    border-right: 2px solid #000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6px;
+  }
+
+  header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+
+  .checkbox_form {
+    font-size: 0.9rem;
+  }
+
+  .show_infor {
+    display: none; /* Ẩn phần tử này */
+    margin-top: 20px;
+    border: 2px #000 solid;
+    width: 236px;
+    height: 400px;
+  }
+
+  .main__gis--right {
+    border-left: 2px solid #000;
+    position: relative;
+    display: flex;
+  }
+
+  .main__gis--right > .line {
+    object-fit: cover;
+  }
+
+  .main__gis--right > div {
+    text-align: center;
+  }
+
+  .main__gis--right > div > h3 {
+    border-bottom: 2px solid #000;
+  }
+
+  .line > h3 {
+    padding: 0 26px;
+  }
+
+  .line {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+  }
+
+  .ol-popup::after,
+  .ol-popup::before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .ol-popup::after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+
+  .ol-popup::before {
+    border-top-color: #ccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+
+  .ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+  }
+
+  .ol-popup-closer::after {
+    content: "x";
+  }
+
+  .muiten {
+    position: absolute;
+  }
+
+  .query-buttons {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Thêm khoảng cách giữa các nút button */
+  }
+
+  .query-buttons button {
+    padding: 10px 20px;
+    background-color: #45a099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .query-buttons button:hover {
+    background-color: #45a099;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .query-buttons button:active {
+    background-color: #45a099;
+    transform: translateY(0);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+  }
+  
+  .ol-popup:after,
+  .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+  
+  .ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+  
